@@ -1,0 +1,53 @@
+/* make variables */
+:root {
+  --lightgray: #D9D9D9;
+  --gray: #9c9c9c;
+  --orange: rgb(61, 21, 61);
+  --darkGrey: rgb(133, 67, 67);
+  --caloryCard: rgb(78, 8, 68);
+  --planCard: linear-gradient(90deg, rgba(15,6,15,1) 0%, rgba(119,10,82,1) 100%);
+  --appColor:  #3c3f45;
+}
+
+.App {
+  background: rgb(129,80,131);
+  background: linear-gradient(90deg, rgba(129,80,131,1) 0%, rgba(107,64,164,1) 61%, rgba(50,9,42,1) 100%);
+  mix-blend-mode: overlay;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  overflow: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.stroke-text{
+  color: transparent;
+  font-family:Arial, Helvetica, sans-serif ;
+  -webkit-text-stroke-width : 2px;
+  -webkit-text-stroke-color : white;
+
+}
+.btn{
+  background-color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: 4px solid transparent;
+  transform: 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.blur{
+  background: rgba(241, 126, 59, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(600px) ;
+  z-index: -9;
+
+
+}
